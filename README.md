@@ -102,4 +102,8 @@ SSH into the control node and follow the steps below:
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
 
-- To get playbook run command: 
+- To get playbook run command: curl https://github.com/BernestV/Bryants-Elk-Stack-Project/blob/main/Ansible/elk-playbook.yml > /etc/ansible/roles/elk_install.yml
+- Edit host file in /etc/ansible and include [elk] with ip adress.
+- To run Playbook: ansib;e-playbook /etc/ansible/roles/elk-playbook.yml
+- To comfirm installation visit http://[your_elk_server_ip]:5601/app/kibana in a browser. 
+- ![Example Screenshot](Diagrams/Kibana.png)
